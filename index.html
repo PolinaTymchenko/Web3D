@@ -17,8 +17,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/parallax.css">
+  <link rel="stylesheet" href="./css/modals.css">
 
-  <title>3D Web Page</title>
+  <title>Stardew valley</title>
 </head>
 
 <body>
@@ -26,9 +28,8 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <span class="coca-cola">Coca-Cola</span>
-        <span class="coca-cola--journey">Journey</span>
-        <p class="tagline">Refreshing the world, one story at a time</p>
+        <span class="logo">Stardew valley Journey</span>
+        <p class="tagline">Growing new stories, one season at a time</p>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -39,11 +40,11 @@
           <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown">Drinks</a>
+              data-bs-toggle="dropdown">Explore</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/coca-cola">Coke</a></li>
-              <li><a class="dropdown-item" href="/sprite">Sprite</a></li>
-              <li><a class="dropdown-item" href="/dr-pepper">Dr Pepper</a></li>
+              <li><a class="dropdown-item" href="/homepage.html">Parsnip</a></li>
+              <li><a class="dropdown-item" href="/sprite">Fish</a></li>
+              <li><a class="dropdown-item" href="/dr-pepper">Iron bar</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
@@ -51,28 +52,40 @@
       </div>
     </div>
   </nav>
-  <section id="hero-banner" class="position-relative">
-    <picture>
-      <source srcset="./assets/images/main_3D_290.jpg" media="(max-width: 290px)">
-      <source srcset="./assets/images/main_3D_400.jpg" media="(max-width: 400px)">
-      <source srcset="./assets/images/main_3D_538.jpg" media="(max-width: 538px)">
-      <source srcset="./assets/images/main_3D_768.jpg" media="(max-width: 768px)">
-      <source srcset="./assets/images/main_3D_970.jpg" media="(max-width: 970px)">
-      <source srcset="./assets/images/main_3D_1400.jpg" media="(max-width: 1400px)">
-      <img src="./assets/images/main_3D.jpg" alt="Fallback Image" class="w-100">
-    </picture>
-
-    <div class="banner-overlay position-absolute top-50 start-50 translate-middle text-center text-white p-3">
-      <h2 class="display-4">Coca-Cola Great Britain</h2>
-      <h3 class="text-info">Foundation by Dr. John S. Pemberton</h3>
-      <p class="lead">
-        Founded in 1886 by pharmacist Dr John S Pemberton in Atlanta, Georgia, The Coca‑Cola Company is the world's
-        leading
-        manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400
-        brands.
-      </p>
+  <section id="hero-banner" class="parallax-container">
+    <div class="falling-leaves">
+      <div class="leaf"></div>
+      <div class="leaf"></div>
+      <div class="leaf"></div>
+      <div class="leaf"></div>
+      <div class="leaf"></div>
+      <div class="leaf"></div>
+      <div class="leaf1"></div>
+      <div class="leaf1"></div>
+      <div class="leaf2"></div>
+      <div class="leaf2"></div>
+      <div class="leaf2"></div>
+    </div>
+    <div class="parallax-layer layer-sky"></div>
+    <div class="parallax-layer layer-sky-mob"></div>
+    <div class="parallax-layer layer-sun"></div>
+    <div class="parallax-layer layer-cows"></div>
+    <div class="parallax-layer layer-farm"></div>
+    <div class="parallax-layer layer-chicken"></div>
+    <div class="parallax-layer layer-chicken layer-chicken1"></div>
+    <div class="parallax-layer layer-boy"></div>
+    <div class="parallax-layer layer-field"></div>
+    <div class="parallax-layer layer-tree"></div>
+    <div class="parallax-layer layer-tree layer-tree2"></div>
+    <div class="parallax-layer layer-tree layer-tree3"></div>
+    <div class="banner-overlay text-center text-white">
+      <h2 class="display-4">Welcome to Stardew Valley</h2>
+      <p class="lead">Grow crops, build friendships, and rediscover joy in every season.</p>
     </div>
   </section>
+  <audio autoplay="false" class="audio">
+    <source src="./assets/images/01. Stardew Valley Overture.mp3" type="audio/mpeg">
+  </audio>
 
   <div class="container my-5">
     <div class="row">
@@ -88,7 +101,7 @@
               Eight hundred miles away, another great American symbol was about to be unveiled.
             </p>
             <div class="mt-auto">
-              <a href="/coca-cola" class="btn btn-primary">Find out more</a>
+              <a href="/homepage.html" class="btn btn-primary">Find out more</a>
             </div>
           </div>
         </div>
@@ -139,10 +152,25 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modals -->
+   <div class="popup-overlay">
+     <div class="play-audio">
+       <p class="audio-text">Do you want to turn the soundtrack on?</p>
+       <ul class="audio-list">
+         <li class="audio-item"><button class="audio-btn audio-btn-yes">Yes</button></li>
+         <li class="audio-item"><button class="audio-btn audio-btn-no">No</button></li>
+       </ul>
+    </div>
+   </div>
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous">
+  </script>
+  <script src="./scripts/parallax.js"></script>
+  <script src="./scripts/audio.js"></script>
 </body>
 
 </html>

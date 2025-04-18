@@ -1,0 +1,300 @@
+.parallax-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    will-change: transform;
+}
+
+#hero-banner {
+    width: 100%;
+    height: calc(100vh - 120px);
+}
+
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media (max-width: 990px) {
+    .layer-sky-mob {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url('../assets/images/sky-mob.png');
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+
+    .layer-sky, .layer-cows, .layer-boy, .layer-chicken, .layer-farm, .layer-tree {
+        display: none;
+    }
+}
+
+@media (min-width: 991px) {
+    .banner-overlay {
+        display: none;
+    }
+}
+
+@media (max-width: 590px) {
+    .tagline {
+        font-size: 6px;
+    }
+
+    .logo {
+        font-size: 10px;
+    }
+}
+
+.layer-sun {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 0;
+    background-image: url(../assets/images/sun.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: 3;
+}
+
+.layer-sky {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/sky.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.layer-field {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    background-image: url('../assets/images/field.png');
+    background-size: cover;
+    background-position: bottom;
+    z-index: 1;
+}
+
+.layer-farm {
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    bottom: 0;
+    left: 5%;
+    background-image: url('../assets/images/farm.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    z-index: 3;
+}
+
+.layer-chicken {
+    position: absolute;
+    width: 100%;
+    height: 18%;
+    bottom: 3%;
+    left: 30%;
+    background-image: url('../assets/images/chicken.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 4;
+    transform: scaleX(-1);
+}
+
+.layer-chicken1 {
+    bottom: 0;
+    left: 10%;
+    transform: none;
+}
+
+.layer-tree {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 90px;
+    left: 36%;
+    background-image: url('../assets/images/tree.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+
+.layer-tree1 {
+    bottom: -45px;
+    left: 2%;
+}
+
+.layer-tree2 {
+    bottom: 5px;
+    left: 28%;
+}
+
+.layer-tree3 {
+    bottom: 0;
+    left: 20%;
+}
+
+/* Cows (bottom right) */
+.layer-cows {
+    position: absolute;
+    width: 100%;
+    height: 31%;
+    bottom: -55px;
+    right: 50%;
+    background-image: url('../assets/images/cows.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 4;
+}
+
+/* Boy (bottom right, closer to cows) */
+.layer-boy {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    right: 5%;
+    background-image: url('../assets/images/boy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 5;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    max-width: 90%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+}
+
+.falling-leaves {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.leaf,
+.leaf1,
+.leaf2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fall linear infinite;
+    opacity: 0.8;
+}
+
+/* Unique background images */
+.leaf {
+    background-image: url('../assets/images/leaf.png');
+}
+
+.leaf1 {
+    background-image: url('../assets/images/leaves.webp');
+}
+
+.leaf2 {
+    background-image: url('../assets/images/sakura.webp');
+}
+
+/* Falling leaves animation */
+@keyframes fall {
+    0% {
+        top: -10%;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        top: 110%;
+        transform: rotate(360deg);
+    }
+}
+
+.falling-leaves div:nth-child(1) {
+    left: 10%;
+    animation-duration: 6.3s;
+    animation-delay: 0.4s;
+}
+
+.falling-leaves div:nth-child(2) {
+    left: 28%;
+    animation-duration: 9.8s;
+    animation-delay: 1.2s;
+}
+
+.falling-leaves div:nth-child(3) {
+    left: 47%;
+    animation-duration: 7.2s;
+    animation-delay: 3.1s;
+}
+
+.falling-leaves div:nth-child(4) {
+    left: 65%;
+    animation-duration: 11.5s;
+    animation-delay: 0.9s;
+}
+
+.falling-leaves div:nth-child(5) {
+    left: 91%;
+    animation-duration: 8.7s;
+    animation-delay: 2.8s;
+}
+
+.falling-leaves div:nth-child(6) {
+    left: 83%;
+    animation-duration: 9.1s;
+    animation-delay: 4.2s;
+}
+
+.falling-leaves div:nth-child(7) {
+    left: 4%;
+    animation-duration: 6.5s;
+    animation-delay: 1.3s;
+}
+
+.falling-leaves div:nth-child(8) {
+    left: 19%;
+    animation-duration: 8.3s;
+    animation-delay: 2.6s;
+}
+
+.falling-leaves div:nth-child(9) {
+    left: 38%;
+    animation-duration: 10.2s;
+    animation-delay: 1.7s;
+}
+
+.falling-leaves div:nth-child(10) {
+    left: 59%;
+    animation-duration: 7.9s;
+    animation-delay: 3.4s;
+}
+
+.falling-leaves div:nth-child(11) {
+    left: 72%;
+    animation-duration: 12.4s;
+    animation-delay: 0.6s;
+}

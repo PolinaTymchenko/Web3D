@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 /* General Reset */
 body {
+    font-family: 'Press Start 2P', monospace;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -16,16 +18,26 @@ body {
 }
 
 .navbar {
+    font-family: 'Press Start 2P', monospace;
+    height: 120px;
+    background-image: url('../assets/images/roof.png');
+    background-size: contain;
     background-color: #1a1a1a;
     border-bottom: 2px solid #e50914;
     transition: background-color 0.3s ease, border-bottom-color 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar-collapse {
+    width: 100vw;
 }
 
 .navbar-brand {
-    font-size: 2.5rem;
-    color: #e50914;
+    font-size: 18px;
+    color: white;
     text-decoration: none;
     font-weight: bold;
+    padding-bottom: 20px;
     transition: color 0.3s ease;
 }
 
@@ -35,27 +47,23 @@ body {
 }
 
 .tagline {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.9rem;
-    margin-top: -10px;
-    color: #777;
+    font-size: 10px;
+    margin: 10px 0;
 }
 
-.coca-cola {
-    font-family: 'Coca-Cola', sans-serif;
-    font-size: 2em;
-    transition: font-size 0.3s ease;
-}
-
-.coca-cola--journey {
-    font-family: 'Oswald', sans-serif;
+.logo--journey {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.3em;
     color: #f2f2f2;
     transition: color 0.3s ease;
 }
 
-/* Navbar Links */
+.navbar-nav {
+    font-size: 14px;
+}
+
 .navbar-nav .nav-link {
-    color: #f2f2f2;
+    color: white;
     padding: 10px 15px;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
@@ -65,9 +73,18 @@ body {
 }
 
 .navbar-nav .nav-link.active {
-    background-color: #e50914;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image: url('../assets/images/btn-bg.png');
     color: white;
     border-radius: 5px;
+}
+
+.navbar-nav .nav-link {
+    padding: 20px;
 }
 
 /* Burger Menu */
@@ -206,7 +223,23 @@ footer {
     padding: 20px;
 }
 
-/* Light Mode for Smaller Screens */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: white;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .navbar-nav .nav-link {
+        color: black;
+    }
+
+    .navbar-nav .nav-link.active {
+        text-align: left;
+        background-position: lef;
+
+    }
+}
+
 @media (max-width: 768px) {
     body {
         background-color: #ffffff;
@@ -220,16 +253,7 @@ footer {
     .navbar {
         background-color: #f8f9fa;
         border-bottom: 2px solid #e50914;
-    }
-
-    .navbar-nav .nav-link {
-        color: #121212;
-    }
-
-    .navbar-toggler-icon,
-    .navbar-toggler-icon::before,
-    .navbar-toggler-icon::after {
-        background-color: #121212;
+        padding: 0 15px;
     }
 
     .col-content {
