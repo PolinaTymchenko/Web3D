@@ -87,6 +87,10 @@ body {
     padding: 20px;
 }
 
+.navbar-nav .nav-link:hover {
+    color: #DD8853;
+}
+
 /* Burger Menu */
 .navbar-toggler {
     border: none;
@@ -163,37 +167,38 @@ body {
     border-radius: 10px;
 }
 
-/* Cards */
 .card {
+    font-family: 'Press Start 2P', monospace;
     background-color: #1a1a1a;
     color: #f2f2f2;
-    /* White text for dark mode */
-    border: none;
+    border: 3px dashed white;
+    border-style: dashed;
+    border-width: 8px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-title {
-    font-size: 1.5rem;
+    font-size: 18px;
     font-weight: bold;
     color: #e50914;
 }
 
 .card-text {
-    font-size: 1rem;
+    font-size: 11px;
     color: #f2f2f2;
-    /* White text for dark mode */
 }
 
 .card-img-top {
-    object-fit: cover;
-    height: 200px;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -235,8 +240,17 @@ footer {
 
     .navbar-nav .nav-link.active {
         text-align: left;
-        background-position: lef;
+        background-position: left;
 
+    }
+
+    .card {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .col-md-4:not(:last-child) {
+        margin-bottom: 20px;
     }
 }
 

@@ -62,7 +62,7 @@ function onResize() {
 }
 
 function addModel() {
-    let modelPath = currentModel === 'coca-cola' ? '../assets/CocaCola Open video.glb' : '../assets/CocaCola Crash Can Video.glb';
+    let modelPath = currentModel === 'coca-cola' ? './assets/Parnship.glb' : '../assets/CocaCola Crash Can Video.glb';
 
     loader.load(modelPath, function (gltf) {
         if (model) scene.remove(model);

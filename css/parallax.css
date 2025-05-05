@@ -19,38 +19,6 @@
     overflow: hidden;
 }
 
-@media (max-width: 990px) {
-    .layer-sky-mob {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-image: url('../assets/images/sky-mob.png');
-        background-size: cover;
-        background-position: center;
-        z-index: 0;
-    }
-
-    .layer-sky, .layer-cows, .layer-boy, .layer-chicken, .layer-farm, .layer-tree {
-        display: none;
-    }
-}
-
-@media (min-width: 991px) {
-    .banner-overlay {
-        display: none;
-    }
-}
-
-@media (max-width: 590px) {
-    .tagline {
-        font-size: 6px;
-    }
-
-    .logo {
-        font-size: 10px;
-    }
-}
-
 .layer-sun {
     position: absolute;
     width: 100%;
@@ -83,6 +51,7 @@
     background-position: bottom;
     z-index: 1;
 }
+
 
 .layer-farm {
     position: absolute;
@@ -145,7 +114,6 @@
     left: 20%;
 }
 
-/* Cows (bottom right) */
 .layer-cows {
     position: absolute;
     width: 100%;
@@ -159,7 +127,6 @@
     z-index: 4;
 }
 
-/* Boy (bottom right, closer to cows) */
 .layer-boy {
     position: absolute;
     width: 100%;
@@ -179,6 +146,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+    width: 500px;
     max-width: 90%;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.6);
@@ -207,7 +175,6 @@
     opacity: 0.8;
 }
 
-/* Unique background images */
 .leaf {
     background-image: url('../assets/images/leaf.png');
 }
@@ -220,7 +187,6 @@
     background-image: url('../assets/images/sakura.webp');
 }
 
-/* Falling leaves animation */
 @keyframes fall {
     0% {
         top: -10%;
@@ -297,4 +263,55 @@
     left: 72%;
     animation-duration: 12.4s;
     animation-delay: 0.6s;
+}
+
+@media (max-width: 990px) {
+    .layer-sky-mob {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -5%;
+        background-image: url('../assets/images/sky-mob.png');
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+
+    .layer-sky,
+    .layer-cows,
+    .layer-tree {
+        display: none;
+    }
+
+    .layer-field {
+        height: 60%;
+    }
+
+    .layer-farm {
+        height: 45%;
+        bottom: 5%;
+    }
+
+    .layer-boy {
+        height: 20%;
+        bottom: 2%;
+        right: 1%;
+    }
+
+}
+
+@media (min-width: 991px) {
+    .banner-overlay {
+        display: none;
+    }
+}
+
+@media (max-width: 590px) {
+    .tagline {
+        font-size: 6px;
+    }
+
+    .logo {
+        font-size: 10px;
+    }
 }
