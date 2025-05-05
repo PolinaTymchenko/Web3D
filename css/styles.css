@@ -289,3 +289,32 @@ footer {
         color: #ffffff;
     }
 }
+
+@media screen and (max-width: 535px) {
+    .tagline {
+        font-size: 6px;
+    }
+
+    .navbar-brand {
+        font-size: 10px;
+    }
+}
+
+.nav-link.active {
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image: url('../assets/images/btn-bg.png');
+    color: white;
+    border-radius: 5px;
+}
+
+.dropdown-item.active {
+    background-color: #fff;
+}
+
+h2, h3, p {
+    font-family: 'Press Start 2P', monospace;
+}

@@ -34,14 +34,9 @@ canvas {
 
 .btn-style {
     padding: 15px;
-    background-color: red;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-}
-
-.btn-style:hover {
-    background-color: darkred;
 }

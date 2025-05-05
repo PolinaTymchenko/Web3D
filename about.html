@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="./assets/images/webIcon.png" type="image/png">
+  <link href="https://fonts.cdnfonts.com/css/coca-cola" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6ac3910c4e.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>About | Stardew Valley Journey</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <span class="logo">Stardew valley Journey</span>
+        <p class="tagline">Growing new stories, one season at a time</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown">Explore</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/parsnip.html">Parsnip</a></li>
+              <li><a class="dropdown-item" href="/apple.html">Apple</a></li>
+              <li><a class="dropdown-item" href="/chest.html">Treasure Chest</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h2 class="display-4 text-center mb-4">About</h2>
+    <p class="lead text-center">For my website, I created a seasonal, interactive experience inspired by Stardew Valley.
+      I included animated 3D models of farm life items using Blender and Three.js, giving the site charm and
+      interactivity. </br>I also created themed parallax banner for homepage</p>
+
+    <section class="my-5">
+      <h3 class="h4">3D Models</h3>
+      <p>I created 3D models of a parsnip, apple, and treasure chest using Blender. Each model includes animations that
+        reflect their in-game behavior, such as the chest opening or the parsnip bouncing slightly when selected. These
+        animations were exported as GLB files and integrated into my website using Three.js.</p>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <img src="./assets/images/Screenshot 2025-05-05 at 20.37.47.png" alt="Blender screenshot of parsnip model" class="img-fluid border">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="./assets/images/Screenshot 2025-05-05 at 20.36.58.png" alt="Blender screenshot of apple model" class="img-fluid border">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="./assets/images/Screenshot 2025-05-05 at 20.35.08.png" alt="Blender screenshot of treasure chest model" class="img-fluid border">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="./assets/images/Screenshot 2025-05-05 at 20.34.05.png" alt="Blender screenshot of treasure chest model" class="img-fluid border">
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5">
+      <h3 class="h4">Design</h3>
+      <p>The models are displayed in a custom Bootstrap canvas. I used Bootstrap components like Navbar and responsive
+        grid, while custom CSS created the soft, pixel-art inspired aesthetic. I added falling leaves and a parallax
+        effect for visual depth. Each model is placed on its own themed page with responsive background and lighting
+        tailored per item.</p>
+    </section>
+
+    <section class="my-5">
+      <h3 class="h4">Integration</h3>
+      <p>I added audio and adjusted it for the homepage. For animations i worked sith physics in Blender</p>
+    </section>
+
+    <section class="my-5">
+      <h3 class="h4">Interaction</h3>
+      <p>Users can interact with each 3D model using orbit controls, and toggle animations or rotation. Buttons are
+        styled with Bootstrap and connected to Three.js actions. The parsnip, for example, can be grown with a click,
+        while the apple rotates with another.</p>
+    </section>
+
+    <section class="my-5">
+      <h3 class="h4">Implementation</h3>
+      <p>I conducted functionality testing to make sure links, animations, and responsive elements work across screen
+        sizes. I shared the website with peers for feedback — one suggested brighter lighting on the chest model,
+        another praised the calm, cozy mood.</p>
+    </section>
+
+    <section class="my-5">
+      <h3 class="h4">Publication</h3>
+      <p>The site has been packaged and zipped for submission. I tested it by reopening the folder in Visual Studio
+        Code, confirming the assets load correctly and all pages function as intended. Screenshots and GLB models are
+        included in the final package.</p>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div><span>&copy; 2025 3D Web Applications</span></div>
+      <div>
+        <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-google"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
